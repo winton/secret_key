@@ -1,5 +1,5 @@
 GEM_NAME = 'secret_key'
-GEM_FILES = FileList['**/*'] - FileList['coverage', 'coverage/**/*', 'pkg', 'pkg/**/*']
+GEM_FILES = FileList['**/*'] - FileList['coverage', 'coverage/**/*', 'pkg', 'pkg/**/*', 'spec/tmp', 'spec/tmp/**/*']
 GEM_SPEC = Gem::Specification.new do |s|
   # == CONFIGURE ==
   s.author = "Winton Welsh"
@@ -7,7 +7,6 @@ GEM_SPEC = Gem::Specification.new do |s|
   s.homepage = "http://github.com/winton/#{GEM_NAME}"
   s.summary = "Provides an accessor for a secret key stored in tmp"
   # == CONFIGURE ==
-  s.executables << GEM_NAME
   s.extra_rdoc_files = [ "README.markdown" ]
   s.files = GEM_FILES.to_a
   s.has_rdoc = false
