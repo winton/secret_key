@@ -15,6 +15,7 @@ Usage
 -----
 
 <pre>
-key = SecretKey.new(File.dirname("__FILE__"))
-key.read
+require 'rubygems'
+require 'secret_key'
+key = SecretKey.new(File.dirname(__FILE__)).read
 </pre>
